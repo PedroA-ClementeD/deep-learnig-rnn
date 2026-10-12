@@ -37,10 +37,10 @@ Se usan las 10.000 palabras más frecuentes y cada reseña se recorta o rellena 
 
 | Métrica | Valor |
 |---|---|
-| Accuracy en prueba | [completar] |
-| F1-Score | [completar] |
-| AUC | [completar] |
-| Épocas entrenadas | [completar] |
+| Accuracy en prueba | 0.8616 |
+| F1-Score | 0.8652 |
+| AUC | 0.9374 |
+| Épocas entrenadas | 4 (mejor: época 2) |
 
 ![Entrenamiento](reports/entrenamiento.png)
 ![Matriz de confusión y curva ROC](reports/matriz_confusion.png)
@@ -107,3 +107,4 @@ python src/predict.py "One of the best movies I have ever seen"
 ## Limitaciones
 
 El modelo solo entiende inglés: en un texto en español casi todas las palabras quedan fuera del vocabulario. Tampoco conoce el sarcasmo ni las reseñas neutras, porque el dataset no incluye opiniones de 5 o 6 estrellas; ante una opinión tibia igual va a elegir positiva o negativa.
+También falla más con textos muy cortos: "I didn't like it at all" lo clasificó como positiva.
