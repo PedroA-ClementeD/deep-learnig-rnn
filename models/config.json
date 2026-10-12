@@ -1,0 +1,8 @@
+{
+  "num_palabras": 10000,
+  "longitud": 200,
+  "clases": [
+    "negativa",
+    "positiva"
+  ]
+}
