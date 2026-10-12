@@ -1,0 +1,12 @@
+Accuracy prueba: 0.8616
+Pérdida prueba: 0.3526
+AUC: 0.9374
+
+              precision    recall  f1-score   support
+
+    negativa      0.882     0.835     0.858     12500
+    positiva      0.843     0.889     0.865     12500
+
+    accuracy                          0.862     25000
+   macro avg      0.863     0.862     0.861     25000
+weighted avg      0.863     0.862     0.861     25000
